@@ -1,0 +1,14 @@
+{
+  "name": "scruffy-shuffle",
+  "repo": "kitto1/scruffy-shuffle",
+  "description": "Lets you deal cards to players giving one an advantage.",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {},
+  "development": {},
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js"
+  ]
+}
