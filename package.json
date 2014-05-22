@@ -1,0 +1,26 @@
+{
+  "name": "scruffy-shuffle",
+  "version": "0.0.1",
+  "description": "Lets you deal cards to players giving one an advantage. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kitto1/scruffy-shuffle.git"
+  },
+  "keywords": [
+    "shuffle",
+    "weighted"
+  ],
+  "author": "Ivy & Kai",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kitto1/scruffy-shuffle/issues"
+  },
+  "homepage": "https://github.com/kitto1/scruffy-shuffle",
+  "devDependencies": {
+    "tape": "^2.13.1"
+  }
+}
