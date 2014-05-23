@@ -1,6 +1,6 @@
 {
   "name": "scruffy-shuffle",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Lets you deal cards to players giving one an advantage. ",
   "main": "index.js",
   "scripts": {
