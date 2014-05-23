@@ -53,17 +53,30 @@ var objects = [{
 
 // the value of each object is its 'price' field
 // we want 2 hands where the first hand is twice as good as the second
-var dealt = shuffle(objects, 'price', [2,1])
+var hands = shuffle(objects, {
+	valueField:'price',
+	players:[2,1]
+})
 
-var goodList = dealt[0]
-var badList = dealt[1]
+var betterList = hands[0]
+var worseList = hands[1]
 ```
 
 ## api
 
-### `var hands = shuffle(array, valueField, players)`
+### `var hands = shuffle(array, opts)`
 
-Shuffle the array of objects into one hand for each element in the players array
+Shuffle the array of objects into multiple arrays one for each player
+
+The opts object has the following properties:
+
+ * size - the number of cards in each players hand (optional)
+ * valueField - which field of each object represents it value (can be map function)
+ * players - an array of weightings for each player
+
+The size (if given) is the number of cards for each hand
+
+The valueField can be a string or a function and is used to determine the 'value' of each object
 
 The list of players is a list of relative weighting towards each hand.
 
@@ -78,8 +91,6 @@ If you wanted 5 players with an even split:
 ```js
 [1,1,1,1,1]
 ```
-
-The valueField can be a string or a function and is used to determine the 'value' of each object
 
 ## license
 
